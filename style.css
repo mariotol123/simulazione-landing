@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.menu-toggle{
+    display: none;
+}
+
 #navbar{
     height: 200px;
     background-image: url("./images/navbar.avif");
@@ -221,3 +225,108 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+
+@media only screen and (max-width: 430px) {
+    
+    
+    #navbar img {
+        height: 100px;
+        margin: 0 auto;
+    }
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 50%;
+        background-color: #333;
+        z-index: 1;
+        transform: translateX(50%);
+    }
+
+    #navbar ul a {
+        padding: 10px;
+        text-align: center;
+        color: yellow;
+        display: block;
+    }
+
+    #navbar:hover ul {
+        display: flex;
+    }
+
+    /* Stile per il pulsante del menu (hamburger icon) */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 20px;
+        color: white;
+        margin-right: 20px;
+        margin-bottom: 180px;
+    }
+
+    main{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #chisiamo{
+        width: 400px;
+        
+    }
+
+    .btn{
+        font-size: 20px;
+    }
+
+    .section-1{
+        display: flex;
+        flex-direction: column;
+    }
+
+   .imgdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .div1{
+    width: auto;
+   display: flex;
+   flex-direction: column;
+   }
+
+   .section-2{
+    display: flex;
+    flex-direction: column-reverse;
+    
+    }
+   .div2{
+    width: auto;
+   display: flex;
+   flex-direction: column;
+   }
+
+
+    .imgdiv2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .box-card{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card{
+        margin: 0 auto;
+    }
+
+
+  }
