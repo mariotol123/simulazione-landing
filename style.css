@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.navbar{
+#navbar{
     height: 200px;
     background-image: url("./images/navbar.avif");
     background-position: center;
@@ -16,18 +16,18 @@
     
 }
 
-.navbar img{
+#navbar img{
     height: 100px;
     border-radius: 10px;
     margin-left: 20px;
 }
 
-.navbar ul{
+#navbar ul{
     display: flex;
     list-style-type: none;
 }
 
-.navbar ul a{
+#navbar ul a{
     margin: 0 20px;
     text-decoration: none;
     color: yellow;
@@ -73,7 +73,8 @@ main{
 
 .btn{
     border-radius: 10px;
-    background-color: white;
+    border: 2px solid black;
+    
     font-size: 40px;
     text-decoration: none;
     padding: 10px;
@@ -194,4 +195,29 @@ background-image: url("./images/card1.avif");
 .card3 p:hover{
     font-weight: bolder;
     font-size: 40px;
+}
+
+footer{
+    background-color: gray;
+}
+
+.prima-parte{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.pagine ul, .link ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.seconda-parte{
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 5px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
