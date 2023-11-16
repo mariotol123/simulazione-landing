@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    height: 1000px;
+}
+
+section{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 600px;
+    width: 800px;
+    background-color: white;
+    
+}
+
+ h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+}
+
+.form-mage{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+
+.img img {
+    width: 200px;
+    height: 400px;
+}
+
+.invia{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
