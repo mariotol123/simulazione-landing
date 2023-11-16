@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+#navbar{
+    height: 150px;
+    background-image: url("./images/navbar.avif");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    
+}
+
+#navbar img{
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#navbar ul a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: yellow;
+}
+
+
+main{
+    height: 800px;
+    background-image: url("./images/about.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main img{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p{
+    width: 500px;
+}
+
+
+footer{
+    background-color: gray;
+}
+
+.prima-parte{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.pagine ul, .link ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.seconda-parte{
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 5px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 1025px){
+
+    
+    #navbar img{
+        height: 50px;
+    }
+
+    #navbar ul a{
+        font-size: 10px;
+    }
+
+    main img{
+        height: 200px;
+        margin-top: calc(100vh - 300px);
+        margin-left: 50px;
+    }
+
+    .paragrafo{
+        font-size: 20px;
+        width: 100%;
+        margin-left: -100px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    
+    
+    #navbar img {
+        height: 100px;
+        margin: 0 auto;
+    }
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 50%;
+        background-color: #333;
+        z-index: 1;
+        transform: translateX(50%);
+    }
+
+    main img {
+        height: 100px;
+    }
+
+   .paragrafo{
+    font-size: 10px;
+   }
+
+    
+}

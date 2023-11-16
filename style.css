@@ -234,11 +234,18 @@ footer{
         height: 50px;
     }
 
+    #navbar ul a{
+        font-size: 10px;
+    }
+
+    
+
     main{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
+
 
     #chisiamo{
         width: 400px;
