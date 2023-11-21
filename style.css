@@ -35,6 +35,13 @@
     margin: 0 20px;
     text-decoration: none;
     color: yellow;
+    transition: all ease 0.2s;
+}
+
+#navbar ul a:hover{
+    display: block;
+    transform: scale(1.5    );
+    text-decoration: underline;
 }
 
 main{
@@ -86,12 +93,20 @@ main{
 
 .btn-primary:hover{
     color: red;
-    font-weight: bolder;
+    transform: scale(1.1);
+}
+
+.btn-primary{
+    transition: all ease 0.2s;
 }
 
 .btn-secondary:hover{
     color: red;
-    font-weight: bolder;
+    transform: scale(1.1);
+}
+
+.btn-secondary{
+    transition: all ease 0.2s;
 }
 
 
@@ -174,12 +189,15 @@ background-image: url("./images/card1.avif");
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Satisfy', cursive;
+    transition: all ease 0.5s;
 }
 
 .card1 p:hover{
     font-weight: bolder;
-    font-size: 30px;
+    transform: scale(1.8);
 }
+
+
 
 .card2{
     background-image: url("./images/card2.avif");
@@ -188,7 +206,7 @@ background-image: url("./images/card1.avif");
 
 .card2 p:hover{
     font-weight: bolder;
-    font-size: 25px;
+    transform: scale(1.6);
     color: white;
 }
 
@@ -198,7 +216,7 @@ background-image: url("./images/card1.avif");
 
 .card3 p:hover{
     font-weight: bolder;
-    font-size: 40px;
+    transform: scale(2.3);
 }
 
 footer{
